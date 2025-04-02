@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<!-- Lang é para informar a linguagem padrão do meu site (google tradutor) -->
+<html lang="pt-br">
+<head>
+    <!-- Tipo de padronização dos caracteres = UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Compatibilidade com o internet Explorer e navegadores mais antigos -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- viewport é a área visivel para o usuário, com essa tag os elementos se adaptam de acordo com o dispositivo, nesse caso, com a escala 1.0 (Isso não é a responsividade, apenas possibilita ver sistes desktop com escala pra mobile) -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Descrição que aparece junto com o título do site -->
+    <meta name="description" content="Site de HTML teste para aula de 4HORAS">
+    <!-- Palavras-chave utilizadas pelo Google para a indexação em pesquisas -->
+    <meta name="keywords" content="programacao,html">
+    <!-- Quem é o autor do site? utilizado pelo sistema de busca como "pontuação" -->
+    <meta name="author" content="Arthur Xavier">
+
+    <title>Curso completo HTML (4hrs)</title>
+</head>
+<body>
+    <!-- Usar apenas um H1 por página para melhorar os mecanismos de busca - SEO (Search Engine Optimization): Otimização para motores de busca -->
+    <h1>Aula de HTML</h1>
+    
+    
+    <!-- <del></del>: delete, deixa riscado -->
+    <!-- <strike></strike>: tag antiga igual o <del></del>, está em desuso -->
+     <!-- <mark></mark>: marca-texto -->
+    <p>De <del>R$500,00</del> por <mark>R$300,00</mark></p>
+
+    <!-- <sup></sup>: superscript (sobrescrita) -->
+    <!-- <sub></sub>: subscript (subscrito) -->
+    <p>O número é 2<sup>10</sup> e log<sub>10</sub></p>
+
+    <!-- linha horizontal -->
+    <hr>
+
+    <!-- <i></i>: italico -->
+    <!-- <u></u>: underline -->
+    <h2><u>O que são <i>Tags?</i></u></h2>
+
+    <!-- <br> ou <br/>: break row -->
+    <!-- <small></small>: diminui um pouco o texto -->
+    <p>JNFSDIJNFDJVDJNVJKNFDJKVNDFKVMDFSKMVLSM,L</small></p>
+
+    <h2>Elementos de Citação</h2>
+    
+    <!-- <abbr title=""></abbr>: mostra a abreviação de uma sigla ao passar o mouse por cima -->
+    <p>Estamos aprendendo <abbr title="Hyper text markup language">HTML</abbr></p>
+
+    <!-- <address></address>: endereço, pode ser usado pra endereço físico, como também links de URL -->
+    <p>Endereço: <address>Rua A, numero 100, centro. Cidade</address></p>
+    
+    <!-- <bdo dir="rtl"></bdo>: inverte um texto -->
+    <!-- auto: automatic (padrão): ltr  -->
+    <!-- ltr: left to right -->
+    <!-- rtl: right to left -->
+    <bdo dir="rtl">
+        JNFSDIJNFDJVDJNVJKNFDJKVNDFKVMDFSKMVLSM
+    </bdo>
+    <br>
+
+    <hr>
+    <!-- <a href=""></a>: anchor - âncora de link -->
+    <!-- target - alvo -->
+    <!-- target="_blank": nova aba -->
+    <!-- target="_self":  abre na mesma página (padrão)-->
+    <!-- target="meu-iframe": ao invés de abrir outra aba, abra no iframe indicado -->
+    <!-- ./ : a partir da fonte -->
+    <!-- ../ : volte uma pasta -->
+    <!-- ../../ : volte duas pasta -->
+
+    <!-- Caminho absoluto: um caminho completo -->
+    <a href="https://google.com" target="_blank">Ir para o Google</a> <br>
+
+    <!-- Caminho relativo: um caminho dentro da própria pasta que depende de onde está o arquivo atual-->
+    <a href="sobre.html" target="meu-iframe">Sobre nós</a> <br>
+    <a href="equipe/jonas.html" target="_self">Jonas</a>
+    <hr>
+
+    <h2>Imagens</h2>
+
+    <!-- src do projeto: caminho relativo ou absoluto -->
+    <img src="img/coachbanner.jpg" width="300px" alt="basílica de São Pedro"> <br>
+    
+    <!-- icone -->
+     <img src="img/iconeaz.jpeg" alt="" width="50px">
+    <!-- site para comprimir arquivos: Compress.jpg, tiny.jpg ... -->
+    <!-- site para redimensionar o kbyte(mbyte)/pixel: easy resize -->
+    <!-- site que simula o Photoshop: Photopea -->
+    <!-- site para pegar icones: flaticon -->
+    <!-- image map generator: image-map.net -->
+
+    <h2>Tabelas</h2>
+
+    <!-- table: tabela -->
+    <!-- th: table row - linha da tabela -->
+    <!-- tr: table head - "titulo" da coluna da tabela -->
+    <!-- td: table data - dados da tabela -->
+    <!-- colspan="": une colunas pra frente -->
+    <!-- rowspan="": une linhas pra baixo -->
+    <table width="100%" border="1" style="text-align: center;">
+        <tr>
+            <th>Nome</th>       <th>Idade</th>  <th>Peso</th>   <th>Linguagem</th>
+        </tr>
+        <tr>
+            <td>Dimitri</td>    <td>30</td>     <td>85kg</td>   <td>HTML</td>
+        </tr>
+        <tr>
+            <td>Jonas</td>       <td>20</td>     <td>70kg</td>   <td>CSS</td>
+        </tr>
+    </table>
+
+    <h2>Lista Desordenada</h2>
+
+    <!-- ul: Unordered List - lista desordenada -->
+    <!-- li: list item - ltem da lista -->
+    <ul>
+        <!-- p*3>lorem -->
+        <!-- li*4> -->
+        <li>Triceps</li>
+        <li>Biceps</li>
+        <li>Costas</li>
+        <li>Peito</li>
+    </ul>
+
+    <h2>Lista Ordenada</h2>
+
+    <!-- ol: Ordered List - lista ordenada -->
+    <ol>
+        <li>Ligar o carro</li>
+        <li>Aquecer o motor</li>
+        <li>Colocar o cinto</li>
+        <li>Andar pela cidade</li>
+        <li>Desligar o carro</li>
+    </ol>
+
+    <h2>iframe</h2>
+
+    <!-- iframe: inline frame -->
+    <!-- é como um mini navegador para qualquer tipo, site, vídeo, mapa... -->
+    <iframe src="equipe/jonas.html" style="border: none;" width="100%"></iframe>
+    <iframe src="" name="meu-iframe" title="iframe de exemplo" width="100%"></iframe>
+
+    <h2>Formulário</h2>
+    <a href="formulario.html">Formulário</a>
+
+    <h2 id="audio">Áudio</h2>
+    <a href="audio.html">Áudio</a>
+    <p>Espaço&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;em&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;branco</p>
+
+    <h2 id="video">Vídeo</h2>
+    <a href="video.html">Vídeo</a>
+
+
+    <div class="topo">
+        <h1>Topo</h1>
+        <p>Aqui a parte do topo</p>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+        <a href="index.html">Link</a>
+    </div>
+
+    <div class="coluna-50">
+        <h2>Coluna</h2>
+        <p>JNFSDIJNFDJVDJNVJKNFDJKVNDFKVMDFSKMVLSMJNFSDIJNFDJVDJNVJKNFDJKVNDFKVMDFSKMVLSMJNFSDIJNFDJVDJNVJKNFDJKVNDFKVMDFSKMVLSM</p>
+    </div>
+
+    <div>
+        <h2>Coluna</h2>
+        <p>JNFSDIJNFDJVDJNVJKNFDJKVNDFKVMDFSKMVLSMJNFSDIJNFDJVDJNVJKNFDJKVNDFKVMDFSKMVLSM</p>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <h2>Revisão Geral do Jonas</h2>
+
+    <p>Paragrafo</p>
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <br>Break Row - Qubra de linha <br>
+    <b>Bold - Negrito</b> <br>
+    <strong>Bold - Negrito (enfâse)</strong> <br>
+    <i>Itálico</i> <br>
+    <u>Underline - Sublinhado</u> <br>
+    <hr> Linha de divisão <br>
+    <small>texto pequeno</small> <br>
+    <del>Delete - Riscado</del> <br>
+    <strike>Delete - Riscado em desuso</strike> <br>
+    <sup>Superscript Sobrescrita</sup> <br>
+    <sub>Subscript - Subscrito </sub> <br>
+    <mark>Marcação</mark> <br>
+    <abbr title="abreviação">Abbreviation</abbr>
+    <address>Endereço físico ou online</address>
+    <cite>Citação de obra literária</cite> <br>
+    <q>Quote - Citação curta de algo dito</q>
+    <blockquote>Citação longa de algo dito</blockquote>
+    <bdo dir="rtl">BiDirectional Override - Invertido</bdo> <br>
+    <!-- Comentário -->
+    <a href="./equipe/jonas.html">anchor - âncora de link</a> <br>
+    <img src="img/iconeaz.png" alt="imagem" width="20px"> <br>
+    <table border="1">
+        <tr>
+            <th colspan="3">INFORMAÇÃO NUTRICIONAL 350ml (1 UNIDADE)</th>
+        </tr>
+        <tr>
+            <td colspan="2">QUANTIDADE POR EMBALAGEM</td>
+            <td>%VD (*)</td>
+        </tr>
+        <tr>
+            <td>VALOR ENERGÉTICO</td>
+            <td>149 kcal = 632 kJ</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>CARBOIDRATOS, DOS QUAIS:</td>
+            <td>37g</td>
+            <td>12</td>
+        </tr>
+        <tr>
+            <td>&numsp; ACÚCARES</td>
+            <td>37g</td>
+            <td>**</td>
+        </tr>
+        <tr>
+            <td>SÓDIO</td>
+            <td>18mg</td>
+            <td>1</td>
+        </tr>
+    </table>
+    <ul>
+        <li>Lista desordenada</li>
+        <li>Lista desordenada</li>
+        <li>Lista desordenada</li>
+    </ul>
+    <ol>
+        <li>Lista ordenada</li>
+        <li>Lista ordenada</li>
+        <li>Lista ordenada</li>
+    </ol>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Id_91FZ9txU?si=f38_dwtWqVoHoDJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</body>
+</html>
